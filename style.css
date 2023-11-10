@@ -1,4 +1,6 @@
 @charset "utf-8";
+ 
+@media(max-width:999px){
 
 *{
     margin: 0px;
@@ -29,16 +31,17 @@ header {
 
 nav{
     display: flex;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-right: 10px;
 }
 
 nav > a{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
     color: var(--cor2);
     text-decoration: none;
     font-weight: bold;
-    padding: 2px;
+    padding: 10px;
     
 
 }
@@ -120,5 +123,10 @@ nav > a{
     font-weight: bold;
     text-decoration: none;
     color: var(--cor2);
+
+}
+}
+
+@media(min-width:1000px){
 
 }
