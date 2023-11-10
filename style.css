@@ -1,199 +1,73 @@
 @charset "utf-8";
- 
-@media(max-width:999px){
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+@media(max-width:999px) {
 
-:root{
-    --cor1: #F2CB05;
-    --cor2: #733702;
-    --cor3: white;
-}
-
-#logo{
-    padding: 10px;
-    width: 100px;
-    margin-right: auto; 
-}
-
-header {
-    background-color: var(--cor1);
-    display: flex;
-    height: 70px;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 10px;
-}
-
-
-nav{
-    display: flex;
-    padding-top: 40px;
-    padding-right: 10px;
-}
-
-nav > a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.7em;
-    color: var(--cor2);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    
-
-}
-
-.titulos{
-    color: var(--cor2);
-    padding-top: 10px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-#textosomos{
-    text-align: justify;
-    margin: 10px;
-    padding: 10px;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-.cardapio{
-    padding: 10px;
-    text-align: center;
-}
-
-.cardapio a{
-    color: black;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 360px;
-    padding: 5px;
-    text-align: center;
-    display: block;
-
-}
-
-.comida{
-    width: 370px;
-    padding: 3px;
-}
-
-.contatos a{
-    color: black;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 360px;
-    padding: 5px;
-    text-align: center;
-    display: block;
-}
-
-.icones{
-    float: left;
-    width: 20px;
-    margin-right: 5px;
-}
-
-#mapa{
-    text-align: center;
-    padding: 10px;
-
-}
-
-#creditos{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-
-
-}
-
-#creditos > p a{
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--cor2);
-
-}
-}
-
-@media(min-width:1000px){
-    *{
+    * {
         margin: 0px;
         padding: 0px;
     }
-    
-    :root{
+
+    :root {
         --cor1: #F2CB05;
         --cor2: #733702;
         --cor3: white;
     }
-    
-    #logo{
+
+    #logo {
         padding: 10px;
         width: 100px;
-        margin-right: auto; 
+        margin-right: auto;
     }
-    
+
     header {
         background-color: var(--cor1);
         display: flex;
         height: 70px;
-        justify-content: space-between; 
-        align-items: center; 
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 10px;
     }
-    
-    
-    nav{
+
+
+    nav {
         display: flex;
         padding-top: 40px;
         padding-right: 10px;
     }
-    
-    nav > a{
+
+    nav>a {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
+        font-size: 0.7em;
         color: var(--cor2);
         text-decoration: none;
         font-weight: bold;
         padding: 10px;
-        
-    
+
+
     }
-    
-    .titulos{
+
+    .titulos {
         color: var(--cor2);
         padding-top: 10px;
         font-weight: bold;
         text-align: center;
         font-size: 1.5em;
     }
-    
-    #textosomos{
+
+    #textosomos {
         text-align: justify;
         margin: 10px;
         padding: 10px;
         font-size: 1em;
         line-height: 1.5em;
     }
-    
-    .cardapio{
+
+    .cardapio {
         padding: 10px;
         text-align: center;
     }
-    
-    .cardapio a{
+
+    .cardapio a {
         color: black;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -204,15 +78,15 @@ nav > a{
         padding: 5px;
         text-align: center;
         display: block;
-    
+
     }
-    
-    .comida{
+
+    .comida {
         width: 370px;
         padding: 3px;
     }
-    
-    .contatos a{
+
+    .contatos a {
         color: black;
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -224,31 +98,169 @@ nav > a{
         text-align: center;
         display: block;
     }
-    
-    .icones{
+
+    .icones {
         float: left;
         width: 20px;
         margin-right: 5px;
     }
-    
-    #mapa{
+
+    #mapa {
         text-align: center;
         padding: 10px;
-    
+
     }
-    
-    #creditos{
+
+    #creditos {
         padding-top: 20px;
         padding-bottom: 10px;
         text-align: center;
-    
-    
+
+
     }
-    
-    #creditos > p a{
+
+    #creditos>p a {
         font-weight: bold;
         text-decoration: none;
         color: var(--cor2);
+
+    }
+}
+
+@media(min-width:1000px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    :root {
+        --cor1: #F2CB05;
+        --cor2: #733702;
+        --cor3: white;
+    }
+
+    #logo {
+        padding: 10px;
+        width: 100px;
+        margin-right: auto;
+    }
+
+    header {
+        background-color: var(--cor1);
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.441);
+    }
+
+    main{
+        background-color: #f2cb055c;
+        width: 900px;
+        margin: auto;
     
+    }
+
+
+    nav {
+        display: flex;
+        padding-top: 40px;
+        padding-right: 10px;
+    }
+
+    nav>a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color: var(--cor2);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+
+
+    }
+
+    .titulos {
+        color: var(--cor2);
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #textosomos {
+        text-align: justify;
+        margin: 10px auto;
+        max-width: 600px;
+        padding: 10px;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .cardapio {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cardapio a {
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 360px;
+        padding: 5px;
+        text-align: center;
+        display: block;
+
+    }
+
+    .comida {
+        width: 370px;
+        padding: 3px;
+    }
+
+    .contatos a {
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 360px;
+        padding: 5px;
+        text-align: center;
+        display: block;
+    }
+
+    .icones {
+        float: left;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    #mapa {
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    #creditos {
+        background-color:  #f2cb055c;
+        width: 900px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: auto;
+        text-align: center;
+
+
+    }
+
+    #creditos>p a {
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--cor2);
+
     }
 }
