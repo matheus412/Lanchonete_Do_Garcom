@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Lanchonete do Garçom</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <script src="script/script.js"></script>
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
-    <title>Lanchonete Do Garçom</title>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
 <body>
     <header>
         <div>
@@ -19,74 +19,72 @@
         <span id="burguer" class="material-symbols-outlined">menu</span>
         <menu id="itens">
             <ul>
-                <li><a href="#somos">Quem somos</a></li>
-                <li><a href="#carda">Cardápio</a></li>
-                <li><a href="#cont">Contato</a></li>
-                <li><a href="#chegar">Como chegar</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#como-chegar">Como chegar</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
             </ul>
-        </menu>
+        </menu>       
+       
     </header>
     <main>
-        <article id="somos">
-            <p class="titulos">QUEM SOMOS?</p>
-            <p id="textosomos">Somos a Lanchonete do Garçom, uma referência culinária desde 2018 em Martinópole.
-                Orgulhamo-nos de servir um dos melhores lanches, reconhecidos pela sua qualidade excepcional. Nosso
-                espaço acolhedor e familiar é o local perfeito para desfrutar de uma refeição deliciosa com amigos e
-                familiares. Venha nos visitar e experimente você mesmo o que nos torna uma das escolhas favoritas da
-                região.</p>
-        </article>
-        <article id="carda">
-            <p class="titulos">CARDÁPIO</p>
-            <div class="cardapio">
-                <img class="comida" src="imagens/" alt="">
-                <img class="comida" src="imagens/comida1.jpg" alt="">
-                <img class="comida" src="imagens/comida2.jpg" alt="">
-                <img class="comida" src="imagens/comida3.jpg" alt="">
-                <img class="comida" src="imagens/comida4.jpg" alt=""><br>
-                <a href="https://lanchonetedogarcom.menudino.com/" target="_blank">Visualizar Cardápio Completo</a>
+        <div id="delivery">
+            <a href="https://lanchonetedogarcom.menudino.com/" target="_blank">
+                <picture>
+                    <source media="(max-width:600px )" srcset="imagens/deli-mobile.png">
+                    <img src="imagens/deli-pc.png" alt="" width="100%">
+                </picture>
+            </a>
+        </div>
+        <div id="cardapio">
+            
+            <h2>Nosso Cardápio</h2>
+        
+            <div id="fotos-prato">
+                <img src="imagens/prato-fritas.png" alt="">
+                <img src="imagens/pratinhos.png" alt="">
+                <img src="imagens/pasteis.png" alt="">
+                <img src="imagens/sobremesas.png" alt=""><br>
             </div>
-        </article>
-        <article id="cont">
-            <p class="titulos">CONTATO</p>
-            <div class="contatos">
-                <a href="https://api.whatsapp.com/send?phone=5588988320378" target="_blank"><img
-                        src="imagens/whatsapp.png" alt="" class="icones">Whatsaap</a>
-                <a href="https://www.instagram.com/lanchonetedogarcom/" target="_blank"> <img
-                        src="imagens/instagram.png" alt="" class="icones">Instagram</a>
-                <a href="https://lanchonetedogarcom.menudino.com/" target="_blank"><img src="imagens/pedido.png"
-                        class="icones" alt="">Site para pedidos</a>
+            <div id="card">
+                <a id="txt-card" href="https://lanchonetedogarcom.menudino.com/" target="_blank">Visualizar Cardápio</a>
             </div>
-        </article>
-        <article id="chegar">
-            <p class="titulos">COMO CHEGAR?</p>
+        </div>
+
+        <div id="como-chegar">
+            <h2>Como Chegar</h2>
+            
             <div id="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6749.526288760558!2d-40.69741030464027!3d-3.229471627926298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ebadc3de49ac61%3A0xa072a63f0267ff6e!2sLANCHONETE%20DO%20GAR%C3%87OM!5e1!3m2!1spt-BR!2sbr!4v1699465936217!5m2!1spt-BR!2sbr"
-                    width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5022624780177!2d-40.698912225443706!3d-3.224344440814896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ebadc3de49ac61%3A0xa072a63f0267ff6e!2sLANCHONETE%20DO%20GAR%C3%87OM!5e0!3m2!1spt-BR!2sbr!4v1708018035191!5m2!1spt-BR!2sbr" width="550" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </article>
+
+        </div>
+
+        <div id="contato">
+            <h1>Contato</h1>
+            <form action="" style="position: relative;">
+                <label for="fullname">Nome Completo</label>
+                <input type="text" id="fullname" name="fullname">
+            
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message"></textarea>
+            
+                <button type="submit" style="margin-bottom: 10px;">Enviar</button>
+                <div style="position: absolute; top: 260px; right: 0;">
+                    <a href="https://api.whatsapp.com/send?phone=5588988320378" target="_blank"><img src="imagens/whatsapp.png" style="margin-right: 10px;" width="32px" alt=""></a>
+                    <a href="https://www.instagram.com/lanchonetedogarcom/" target="_blank"><img src="imagens/instagram.png" width="32px" alt=""></a>
+                </div>
+            </form>
+
+        </div>
+
     </main>
     <footer>
-        <div id="creditos">
-            <p> <a href="https://www.instagram.com/matheuss4ntos_/">Copyright &copy;2023 Matheus Santos</a></p>
-        </div>
+        <p>© 2024 Lanchonete do Garçom. Todos os direitos reservados.<br /><a href="https://www.instagram.com/matheuss4ntos_/" target="_blank" rel="noopener">Desenvolvido por Matheus Santos</a></p>
     </footer>
-    <script>
-        document.querySelectorAll('menu > ul > li > a').forEach(function(link) {
-            link.addEventListener('click', function() {
-            
-                document.querySelector('menu > ul').classList.remove('active');
-            });
-        });
-
-
-        document.getElementById('burguer').addEventListener('click', function() {
-            var menuUl = document.querySelector('menu > ul');
-            menuUl.classList.toggle('active');
-        });
-
-    </script>
 </body>
-
 </html>
