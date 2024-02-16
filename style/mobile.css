@@ -76,8 +76,11 @@
         padding: 10px 5px;
     }
 
+    footer p{
+        font-size: 0.9em;
+    }
 
     footer a{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 }
