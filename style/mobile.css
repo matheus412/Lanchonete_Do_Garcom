@@ -76,6 +76,10 @@
         padding: 10px 5px;
     }
 
+    #icon{
+        width: 25px;
+    }
+
     footer p{
         font-size: 0.9em;
     }
