@@ -3,4 +3,37 @@
         margin: 0px;
         padding: 0px;
     }
+
+    #burguer {
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 2em;
+    }
+    
+    menu > ul > li {
+        display: block;
+    }
+    
+    menu > ul > li > a {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    menu {
+        position: absolute;
+        top: 50px;
+        right: 0; 
+        width: 180px;
+        height: 100%;
+        background-color: #f2f2f2;
+        display: none;
+    }
+    
+    menu.active {
+        display: block;
+    }
+    
+
 }
