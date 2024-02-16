@@ -19,7 +19,7 @@
           document.body.classList.remove('menu-active'); 
       });
   });
-  
+
   // Observador de interseção para as imagens
   document.addEventListener("DOMContentLoaded", function() {
       var imagens = document.querySelectorAll('#fotos-prato img');
@@ -35,3 +35,24 @@
           observer.observe(imagem);
       });
   });
+
+  // validação formulário
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    var fullname = document.getElementById("fullname").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (fullname.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert("Por favor, preencha todos os campos.");
+        event.preventDefault();
+    } else if (!isValidEmail(email)) {
+        alert("Por favor, insira um endereço de e-mail válido.");
+        event.preventDefault();
+    }
+});
+
+function isValidEmail(email) {
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
