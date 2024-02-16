@@ -1,4 +1,4 @@
-@media(max-width:600px) {
+@media(max-width:650px) {
     body{
         margin: 0px;
         padding: 0px;
@@ -11,7 +11,11 @@
         padding: 10px;
         font-size: 2em;
     }
-    
+
+    menu > ul{
+        position: absolute;
+    }
+
     menu > ul > li {
         display: block;
     }
@@ -19,6 +23,7 @@
     menu > ul > li > a {
         display: flex;
         padding-top: 20px;
+
     }
     
     menu {
@@ -27,13 +32,52 @@
         right: 0; 
         width: 180px;
         height: 100%;
-        background-color: #f2f2f2;
+        padding-left: 0;
+        padding-right: 0;
+        background-color:  #f2f2f2;;
         display: none;
     }
     
     menu.active {
         display: block;
     }
-    
 
+    body.menu-active {
+        overflow-y: hidden;
+    } 
+
+    #cardapio h2{
+        font-size: 2em;
+    }
+
+    #fotos-prato img{
+        width: 400px;
+    }
+
+    #txt-card{
+        font-size: 1em;
+    }
+
+    #como-chegar h2{
+        font-size: 2em;
+    }
+
+    #mapa iframe{
+        width: 400px;
+        height: 450px;
+    }
+
+    #contato{
+        width: 400px;
+    }
+
+    input,
+    textarea {
+        padding: 10px 5px;
+    }
+
+
+    footer a{
+        font-size: 0.7em;
+    }
 }
