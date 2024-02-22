@@ -4,9 +4,11 @@
       if (menu.classList.contains('active')) {
           menu.classList.remove('active');
           document.body.classList.remove('menu-active'); 
+          burguer.textContent = 'menu';
       } else {
           menu.classList.add('active');
           document.body.classList.add('menu-active');
+          burguer.textContent = 'close';
       }
   });
 
