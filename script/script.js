@@ -18,7 +18,8 @@
       item.addEventListener('click', function() {
           var menu = document.getElementById('itens');
           menu.classList.remove('active');
-          document.body.classList.remove('menu-active'); 
+          document.body.classList.remove('menu-active');
+          burguer.textContent = 'menu'; 
       });
   });
 
